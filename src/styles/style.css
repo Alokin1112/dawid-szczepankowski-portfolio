@@ -1,0 +1,30 @@
+.dots {
+  display: block;
+  margin: 10px;
+  border-radius: 100%;
+  border: 1px solid #001b42;
+  background-color: #f6f6f6;
+  padding: 5px;
+  transition: all 0.2s;
+}
+.active {
+  background-color: #001b42;
+  transform: scale(1.3);
+}
+.control-arrow {
+  opacity: 1 !important;
+  padding-bottom: 11vh !important;
+}
+.control-arrow::before {
+  color: white;
+  border: none !important;
+  font-size: 1.5em;
+}
+.control-prev::before {
+  content: "<" !important;
+  color: black !important;
+}
+.control-next::before {
+  content: ">" !important;
+  color: black !important;
+}
