@@ -63,11 +63,13 @@ const Image = styled.img`
   vertical-align: top;
   height: auto;
   @media (max-width: 768px) {
-    width: 60vw;
+    width: 50vw;
   }
 `;
 const Link = styled.a`
   text-decoration: none;
+  padding: 0;
+
   &:hover ${H5} {
     font-size: 3.55rem;
   }
@@ -81,6 +83,9 @@ const P = styled.p`
   margin-top: 0.5em;
   @media (max-width: 768px) {
     font-size: 1.1em;
+    line-height: 1.1em;
+    margin: 0.25em;
+    padding: 0;
   }
 `;
 // markup

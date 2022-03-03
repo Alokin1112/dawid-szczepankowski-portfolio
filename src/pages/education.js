@@ -83,8 +83,9 @@ const P = styled.div`
     }
   }
   @media (max-width: 768px) {
-    font-size: 1em;
+    font-size: 0.85em;
     width: 70vw;
+    margin: 0.15em;
   }
 `;
 const IMWrapper = styled.div`

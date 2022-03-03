@@ -55,7 +55,7 @@ const ProjectsWrapper = styled.div`
   height: 80vh;
   @media (max-width: 768px) {
     flex-flow: column nowrap;
-    justify-content: center;
+    justify-content: flex-start;
   }
 `;
 // markup
