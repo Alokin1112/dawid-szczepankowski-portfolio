@@ -28,6 +28,7 @@ const Link = styled.a`
   }
   @media (max-width: 768px) {
     margin: auto 2vw;
+    font-size: 0.8em;
   }
 `;
 // markup

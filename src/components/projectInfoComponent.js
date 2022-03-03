@@ -41,7 +41,7 @@ const Wrapper = styled.div`
 
 const H5 = styled.h5`
   font-family: pacifico;
-  font-size: 4rem;
+  font-size: 3.5rem;
   background-image: url(${Star});
   background-size: contain;
   background-clip: text;
@@ -55,7 +55,7 @@ const H5 = styled.h5`
   letter-spacing: 0;
   transition: font 0.25s ease-in-out;
   @media (max-width: 768px) {
-    font-size: 4vh;
+    font-size: 1.5rem;
   }
 `;
 const Image = styled.img`
@@ -63,7 +63,7 @@ const Image = styled.img`
   vertical-align: top;
   height: auto;
   @media (max-width: 768px) {
-    width: 70vw;
+    width: 60vw;
   }
 `;
 const Link = styled.a`
@@ -80,7 +80,7 @@ const P = styled.p`
   color: #767676;
   margin-top: 0.5em;
   @media (max-width: 768px) {
-    font-size: 1.2em;
+    font-size: 1.1em;
   }
 `;
 // markup

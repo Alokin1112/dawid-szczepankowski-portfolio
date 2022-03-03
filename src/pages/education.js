@@ -84,6 +84,7 @@ const P = styled.div`
   }
   @media (max-width: 768px) {
     font-size: 1em;
+    width: 70vw;
   }
 `;
 const IMWrapper = styled.div`

@@ -65,7 +65,7 @@ const Image = styled.div`
   @media (max-width: 768px) {
     &::after {
       background-size: 14vh;
-      background-position: 2.5vh 2.5vh;
+      background-position: 2.25vh 2.25vh;
     }
   }
 `;
