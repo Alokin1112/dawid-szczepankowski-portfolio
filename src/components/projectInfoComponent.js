@@ -10,6 +10,8 @@ const ImageWrapper = styled.div`
   z-index: 5;
   border: 1px solid #001b42;
   position: relative;
+  background-color: yellow;
+  padding: 0;
   &::before {
     z-index: -1;
     transition: transform 0.4s ease-in-out;
@@ -17,12 +19,9 @@ const ImageWrapper = styled.div`
     position: absolute;
     height: 100%;
     width: 100%;
-    top: 0;
-    left: 0;
     background: url(${Star});
     background-size: contain;
-    border: 1px solid #001b42;
-    transform: translate(3%, 3%);
+    transform: translate(2%, 2%);
   }
 `;
 const Wrapper = styled.div`
@@ -30,26 +29,19 @@ const Wrapper = styled.div`
   justify-content: flex-start;
   flex-direction: column;
   align-items: center;
-  width: 40vw;
-  height: 40vh;
-  border: 1px solid #001b42;
   background-color: white;
-  transition: background 0.25s ease-in-out;
   @media (max-width: 768px) {
     width: 80vw;
-    height: 50vh;
+    height: 40vh;
   }
   &:hover ${ImageWrapper}::before {
     transform: translate(0, 0);
-  }
-  &:hover {
-    background-color: #f5f5f5;
   }
 `;
 
 const H5 = styled.h5`
   font-family: pacifico;
-  font-size: 2rem;
+  font-size: 4rem;
   background-image: url(${Star});
   background-size: contain;
   background-clip: text;
@@ -63,13 +55,13 @@ const H5 = styled.h5`
   letter-spacing: 0;
   transition: font 0.25s ease-in-out;
   @media (max-width: 768px) {
-    font-size: 6vh;
+    font-size: 4vh;
   }
 `;
 const Image = styled.img`
-  width: 25vw;
-  z-index: 10;
-
+  width: 35vw;
+  vertical-align: top;
+  height: auto;
   @media (max-width: 768px) {
     width: 70vw;
   }
@@ -77,7 +69,7 @@ const Image = styled.img`
 const Link = styled.a`
   text-decoration: none;
   &:hover ${H5} {
-    font-size: 2.2rem;
+    font-size: 3.55rem;
   }
 `;
 const P = styled.p`

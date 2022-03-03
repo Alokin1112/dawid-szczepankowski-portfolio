@@ -1,4 +1,5 @@
 module.exports = {
+  pathPrefix: "/dawid-szczepankowski-portfolio",
   siteMetadata: {
     title: `Dawid Szczepankowski`,
     siteUrl: `https://www.yourdomain.tld`,

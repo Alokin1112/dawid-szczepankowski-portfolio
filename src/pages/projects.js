@@ -3,8 +3,9 @@ import Star from "../images/stars.jpg";
 import styled from "styled-components";
 import "@fontsource/pacifico";
 import "@fontsource/open-sans";
-import Carousel from "react-spring-3d-carousel";
 import ProjectsInfoComponent from "../components/projectInfoComponent";
+import GuessWho from "../images/GuessWho.png";
+import DrugApp from "../images/DrugApp.png";
 // styles
 const Wrapper = styled.div`
   display: flex;
@@ -45,44 +46,40 @@ const Hr = styled.hr`
     width: 75%;
   }
 `;
+const ProjectsWrapper = styled.div`
+  display: flex;
+  align-items: center;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  width: 100vw;
+  height: 80vh;
+  @media (max-width: 768px) {
+    flex-flow: column nowrap;
+    justify-content: center;
+  }
+`;
 // markup
 const ProjectsPage = () => {
-  const slides = [
-    {
-      key: "1---",
-      content: (
-        <ProjectsInfoComponent
-          img="https://i.ytimg.com/vi/4I3OeGJ-gpQ/maxresdefault.jpg"
-          name="DrugApp"
-          link="https://www.youtube.com/watch?v=QN1odfjtMoo"
-          description="Web with drug corelations"
-        />
-      ),
-    },
-    {
-      key: "2---",
-      content: (
-        <ProjectsInfoComponent
-          img="https://networks.imdea.org/wp-content/uploads/2021/09/media-file-code-900x500.png"
-          name="GuessWho"
-          link="https://www.youtube.com/watch?v=QN1odfjtMoo"
-          description="GuessWho Game"
-        />
-      ),
-    },
-  ];
   return (
     <Wrapper>
       <H3 data-sal="slide-up" data-sal-duration="450">
         Projects
       </H3>
       <Hr />
-      <Carousel
-        slides={slides}
-        showNavigation={true}
-        data-sal="slide-down"
-        data-sal-duration="350"
-      />
+      <ProjectsWrapper>
+        <ProjectsInfoComponent
+          img={DrugApp}
+          name="DrugApp"
+          link="https://alokin1112.github.io/DrugApp/"
+          description="App showing drugs corelations"
+        />
+        <ProjectsInfoComponent
+          img={GuessWho}
+          name="GuessWho"
+          link="https://alokin1112.github.io/guess_who/"
+          description="GuessWho Online Game"
+        />
+      </ProjectsWrapper>
     </Wrapper>
   );
 };

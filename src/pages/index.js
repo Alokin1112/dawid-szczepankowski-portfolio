@@ -35,7 +35,7 @@ const IndexPage = () => {
       <GlobalStyle />
       <NavPage anchors={options.anchors} />
       <SectionsContainer {...options}>
-        <Section class="active">
+        <Section>
           <AboutPage />
         </Section>
         <Section>
